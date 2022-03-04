@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Why do u need a constraint layout when u it has only one child? -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailNewsFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_heading"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:fontFamily="@font/amiko_semibold"
+                android:text="@string/main_heading"
+                android:autoSizeTextType="uniform"
+                android:textAlignment="viewStart"
+                android:textColor="#C1C1C1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/by_author"
+                android:textSize="20sp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="2dp" />
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_news_image_height"
+                android:src="@drawable/default_image"
+                android:contentDescription="@string/news_heading_image" />
+
+            <TextView
+                android:id="@+id/pub_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/published_date"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="5dp"
+                android:textColor="#000609"
+                />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:text="@string/default_content" />
+
+        </LinearLayout>
+
+
+</ScrollView>

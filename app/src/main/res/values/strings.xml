@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">News Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_heading">Main Heading</string>
+    <string name="this_is_a_sample_text">This is a sample text.</string>
+    <string name="no_news_available">No News Available</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="internet_not_available">Internet not available , showing old news</string>
+    <string name="dataHolderList">dataHolderList</string>
+    <string name="published_date">Published Date</string>
+    <string name="default_content">Default Content</string>
+    <string name="get_daily_trending_news">Get Daily Trending News</string>
+    <string name="error_creating_directory">Error creating directory</string>
+    <string name="unable_to_save_images">Unable to save Images</string>
+    <string name="news_app">NewsApp</string>
+    <string name="context_not_available">Context not Available</string>
+    <string name="permission_request">We Need storage permission to store news and offer offline
+        services.\n\nSelect Permissions -> Enable permission</string>
+    <string name="by_author">by : Author</string>
+    <string name="news_heading_image">News Heading Image</string>
+    <string name="cancel">Cancel</string>
+    <string name="permit_manually">Permit Manually</string>
+    <string name="no_image_found">NO Image Found</string>
+    <string name="select_default_item">Select</string>
+    0</resources>
