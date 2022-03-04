@@ -76,6 +76,7 @@ public class NewsFragment extends Fragment implements NewsAdapter.ItemClickListe
     private void displayNews() {
         View view = getView();
         if (view != null) {
+            Log.i("NewsFragment", "Displaying News");
             RecyclerView recyclerView = view.findViewById(R.id.news_list);
             recyclerView.setLayoutManager(new LinearLayoutManager(sActivity));
             ProgressBar progressBar = view.findViewById(R.id.progress_circular_bar);
@@ -101,8 +102,8 @@ public class NewsFragment extends Fragment implements NewsAdapter.ItemClickListe
     private void fetchNews(String country) {
         RetrofitClient.getApiInterface().getNews(country, 20, NewsAPI.KEY)
                 .enqueue(new Callback<NewsStructure>() {
-                    //If the response is successful we will save that news to RoomDB through
-                    // saveNews() Method and display that news to recycler view using displayNews() Method
+                    //If the response is successful we'll save that news to RoomDB through saveNews()
+                    // Method and display that news to recycler view using displayNews() Method
                     @Override
                     public void onResponse(@NonNull Call<NewsStructure> call,
                                            @NonNull Response<NewsStructure> response) {
