@@ -76,7 +76,6 @@ public class NewsFragment extends Fragment implements NewsAdapter.ItemClickListe
     private void displayNews() {
         View view = getView();
         if (view != null) {
-            Log.i("NewsFragment", "Displaying News");
             RecyclerView recyclerView = view.findViewById(R.id.news_list);
             recyclerView.setLayoutManager(new LinearLayoutManager(sActivity));
             ProgressBar progressBar = view.findViewById(R.id.progress_circular_bar);
